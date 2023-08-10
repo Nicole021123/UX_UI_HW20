@@ -4,11 +4,15 @@ html {
 
 body {
     margin: 0% auto;
-    background-image: linear-gradient(#513c9b,#ae83e4,#ad80e4e8,#bb48aa, #ca42a8,#fa347d,#fd145b,#fa5263ab);
+    background-image: linear-gradient(#513c9b,#6d3ea6,#a42d93, #ac288c,#fe0a62,#fd145b,#f83347);
 }
-  
-  .navigation {
-      width: 100%;
+
+.logo-name-together {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
       top: 0px;
       position: fixed;
       position: sticky;
@@ -22,18 +26,22 @@ body {
       justify-content: space-between;
       }
   
-  .logo-name-together {
-        display: flex;
-        align-items: center;
-  }
-
-  .inline-block {
+.inline-block {
       display: inline-block;
       vertical-align: top;
       padding: 3px 10px 0px 10px;
   }
-    
-  nav ul {
+  
+.lorisLogo {
+    width: 10px;
+    }
+  
+.name{
+    text-align: center;
+    vertical-align: middle;
+    }
+  
+nav ul {
     color: #f1caaa;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -41,89 +49,138 @@ body {
     float: right;
   }
   
-  nav ul li {
+nav ul li {
     margin-left: 20px;
   }
-  
-  p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-    }
-  
-   
-  .content {
-      width: 400px;
-      margin: 0 auto;
-      margin-top: 60px;
-      text-align: left;
-  }
-  
-  footer {
-      background-color: rgb(105, 100, 100);
-      width: 100%;
-      bottom: 0px;
-      position: sticky;
-      position: fixed;
-      font-family: Arial, Helvetica, sans-serif;
-      color: black;
-  }
-  
-  footer ul {
-    border-bottom-width: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    padding-left: 20px;
-  }
-  
-  a:link {
-      color: white;
-      text-decoration: line;
-  }
-  a:visited {
-      color: white;
-      text-decoration: none;
-  }
-  a:hover {
-      color: white;
-      text-decoration: none;
-  }
-  a:active {
-      color: white;
-      text-decoration: none;
-  }
-  
-  html, body {
-      width: 100%;
-      padding: 0px;
-      margin: 0px;
-      overflow-x: hidden;
-    }
-  
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 10px 0px 10px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#list-unstyled {
+  color: black;
+  font-size: large;
+  font-weight: light;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: x-large;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
   h1{
     font-size: 60px;
     text-align: center;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 20px;
   }
   
   h2 {
     font-size: 45px;
-    text-align: left;
+    text-align: center;
     color: black;
     display: inline-block;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  
-.row {
-  padding-top: 8%;
-  font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  h3 {
+    font-weight: bold;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  .sectionCTA {
+      padding: 1em 1.5em; /* adds space between text and border of button */
+      border: solid 1.5px silver;
+      border-radius: 10px; /* rounds corners of button */
+      box-shadow: .5em .5em #bbb; 
+      text-align: center; /* centers text in button */
+      white-space: nowrap;
+      width: 20%;
+      }
+
+
+footer {
+    background-color: rgb(105, 100, 100);
+    width: 100%;
+    bottom: 0px;
+    position: sticky;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
+footer ul {
+  border-bottom-width: 10px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
 
-a {
-  color:black;
+#CSLink {
+  color: black;
   text-decoration: none;
-  cursor: pointer;
+}
+
+#CSLink visited {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px)
+.grid {
+    --gridGap: 48px;
+}
+
+@media (min-width: 640px)
+.grid {
+    grid-template-columns: repeat(14,minmax(0,1fr));
+}
+
+.grid {
+    gridGap: 24px;
+    grid-gap: var(--gridGap);
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-template-rows: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.row {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
