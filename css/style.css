@@ -181,5 +181,17 @@ footer ul {
   body {
     background-color: white;
   }
+  .container {
+    width: 100%;
+  }
+  .button {
+    float: center;
+  }
+  .img {
+    object-fit: contain;
+  }
+  .sectionCTA {
+    float: center;
+  }
 }
   
