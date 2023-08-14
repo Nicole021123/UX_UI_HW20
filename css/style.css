@@ -157,17 +157,6 @@ footer ul {
 }
 
 
-
-.grid {
-    gridGap: 24px;
-    grid-gap: var(--gridGap);
-    display: grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    grid-template-rows: auto;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -179,16 +168,17 @@ footer ul {
 
 @media only screen and (max-width:600px) {
   body {
-    background-color: white;
+    background-image: linear-gradient (green, blue);
+    color: white;
   }
   .container {
-    width: 100%;
+    width: 80%;
   }
   .button {
     float: center;
   }
   .img {
-    object-fit: contain;
+    object-fit:scale-down;
   }
   .sectionCTA {
     float: center;
