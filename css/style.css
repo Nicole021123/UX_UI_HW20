@@ -92,6 +92,7 @@ html, body {
 
 p {
   font-size: x-large;
+  padding-right: 10px;
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
